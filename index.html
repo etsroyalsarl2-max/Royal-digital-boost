@@ -15,7 +15,7 @@
 body{
 font-family: Arial, sans-serif;
 margin:0;
-background:#f5f5f5;
+background:#f4f4f4;
 text-align:center;
 }
 
@@ -25,19 +25,16 @@ color:white;
 padding:60px 20px;
 }
 
-section{
-padding:40px 20px;
-}
-
 .container{
-max-width:900px;
+max-width:1000px;
 margin:auto;
+padding:20px;
 }
 
 .box{
 background:white;
 padding:30px;
-margin:20px auto;
+margin:20px;
 border-radius:10px;
 box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
@@ -47,15 +44,10 @@ list-style:none;
 padding:0;
 }
 
-li{
-padding:5px;
-}
-
 .prix{
-font-size:42px;
+font-size:40px;
 color:red;
 font-weight:bold;
-margin:20px;
 }
 
 .btn{
@@ -65,25 +57,20 @@ font-size:18px;
 border-radius:8px;
 text-decoration:none;
 margin:10px;
+color:white;
 }
 
-.btn-acheter{
+.buy{
 background:#28a745;
-color:white;
 }
 
-.btn-whatsapp{
+.whatsapp{
 background:#25D366;
-color:white;
 }
 
-.btn:hover{
-opacity:0.9;
-}
-
-.countdown{
-font-size:28px;
-color:yellow;
+img{
+max-width:100%;
+border-radius:10px;
 margin-top:15px;
 }
 
@@ -104,13 +91,9 @@ margin-top:40px;
 
 <h1>🚀 Royal Digital Boost</h1>
 
-<p>Apprenez à créer un business digital rentable</p>
-
-<div class="countdown" id="timer"></div>
+<p>La solution complète pour apprendre, créer et gagner de l'argent en ligne</p>
 
 </header>
-
-<section id="prix">
 
 <div class="container">
 
@@ -119,9 +102,7 @@ margin-top:40px;
 <h2>🔥 PACK ULTIME PRO+</h2>
 
 <p>
-
 Accédez à des outils premium, des formations professionnelles et des stratégies pour créer un business digital rentable.
-
 </p>
 
 </div>
@@ -141,16 +122,6 @@ Accédez à des outils premium, des formations professionnelles et des stratégi
 <li>CapCut Pro</li>
 <li>Adobe Photoshop</li>
 <li>Adobe Premiere Pro</li>
-<li>Microsoft 365</li>
-<li>Notion Pro</li>
-<li>Grammarly Premium</li>
-<li>Zoom Pro</li>
-<li>Shopify</li>
-<li>WordPress Premium</li>
-<li>Elementor Pro</li>
-<li>Spotify Premium</li>
-<li>Netflix Premium</li>
-<li>YouTube Premium</li>
 
 </ul>
 
@@ -169,9 +140,6 @@ Accédez à des outils premium, des formations professionnelles et des stratégi
 <li>Cybersécurité</li>
 <li>Programmation HTML CSS JavaScript</li>
 <li>Introduction Python</li>
-<li>Création sites web</li>
-<li>Création applications</li>
-<li>Intelligence artificielle</li>
 
 </ul>
 
@@ -188,7 +156,6 @@ Accédez à des outils premium, des formations professionnelles et des stratégi
 <li>Nom de domaine personnalisé</li>
 <li>Accès groupe privé</li>
 <li>Support technique</li>
-<li>Mises à jour gratuites</li>
 
 </ul>
 
@@ -196,23 +163,17 @@ Accédez à des outils premium, des formations professionnelles et des stratégi
 
 <h2 class="prix">💰 Prix Promo : 5600 FCFA</h2>
 
-<a href="https://royal-digital-boost.mychariow.shop/royal-digital" target="_blank" class="btn btn-acheter">
-
+<a href="https://royal-digital-boost.mychariow.shop/royal-digital" target="_blank" class="btn buy">
 Acheter maintenant
-
 </a>
 
 <br>
 
-<a href="https://wa.me/qr/PWO4HJR3BNJKJ1" target="_blank" class="btn btn-whatsapp">
-
+<a href="https://wa.me/qr/PWO4HJR3BNJKJ1" target="_blank" class="btn whatsapp">
 Support WhatsApp
-
 </a>
 
 </div>
-
-</section>
 
 <footer>
 
@@ -220,39 +181,6 @@ Support WhatsApp
 
 </footer>
 
-<script>
-
-var countDownDate = new Date().getTime() + 86400000;
-
-var x = setInterval(function() {
-
-var now = new Date().getTime();
-
-var distance = countDownDate - now;
-
-var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
-var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
-var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-document.getElementById("timer").innerHTML =
-"⏳ Promo se termine dans : " +
-hours + "h " +
-minutes + "m " +
-seconds + "s ";
-
-if (distance < 0) {
-
-clearInterval(x);
-
-document.getElementById("timer").innerHTML = "Promo terminée";
-
-}
-
-}, 1000);
-
-</script>
-
 </body>
+
 </html>
