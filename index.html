@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 
 <meta charset="UTF-8">
@@ -7,71 +8,77 @@
 
 <title>Royal Digital Boost</title>
 
+<link rel="stylesheet" href="style.css">
+
 <style>
 
 body{
-font-family:Arial, sans-serif;
+font-family: Arial, sans-serif;
 margin:0;
-background:#f4f4f4;
+background:#f5f5f5;
 text-align:center;
 }
 
 header{
 background:#0d6efd;
 color:white;
-padding:40px 20px;
+padding:60px 20px;
 }
 
 section{
 padding:40px 20px;
 }
 
+.container{
+max-width:900px;
+margin:auto;
+}
+
 .box{
 background:white;
+padding:30px;
 margin:20px auto;
-padding:25px;
-max-width:900px;
 border-radius:10px;
 box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
-h1,h2{
-margin-bottom:15px;
+ul{
+list-style:none;
+padding:0;
 }
 
-ul{
-text-align:left;
-max-width:600px;
-margin:auto;
+li{
+padding:5px;
 }
 
 .prix{
-font-size:40px;
+font-size:42px;
 color:red;
 font-weight:bold;
+margin:20px;
 }
 
-button{
-padding:15px 30px;
+.btn{
+display:inline-block;
+padding:15px 35px;
 font-size:18px;
-border:none;
 border-radius:8px;
-cursor:pointer;
+text-decoration:none;
+margin:10px;
 }
 
-.buy{
+.btn-acheter{
 background:#28a745;
 color:white;
 }
 
-.whatsapp{
+.btn-whatsapp{
 background:#25D366;
 color:white;
 }
 
-.temoignage{
-font-style:italic;
-margin:10px;
+.btn:hover{
+opacity:0.9;
 }
 
 .countdown{
@@ -84,6 +91,7 @@ footer{
 background:#111;
 color:white;
 padding:20px;
+margin-top:40px;
 }
 
 </style>
@@ -96,27 +104,34 @@ padding:20px;
 
 <h1>🚀 Royal Digital Boost</h1>
 
-<p>La solution complète pour apprendre, créer et gagner de l'argent en ligne</p>
+<p>Apprenez à créer un business digital rentable</p>
 
 <div class="countdown" id="timer"></div>
 
 </header>
 
-<section class="box">
+<section id="prix">
+
+<div class="container">
+
+<div class="box">
 
 <h2>🔥 PACK ULTIME PRO+</h2>
 
 <p>
-Accédez à des outils premium, formations professionnelles et stratégies pour créer un business digital rentable.
+
+Accédez à des outils premium, des formations professionnelles et des stratégies pour créer un business digital rentable.
+
 </p>
 
-</section>
+</div>
 
-<section class="box">
+<div class="box">
 
 <h2>🤖 Abonnements Premium Inclus</h2>
 
 <ul>
+
 <li>ChatGPT Premium</li>
 <li>Gemini Advanced</li>
 <li>Claude AI</li>
@@ -136,129 +151,66 @@ Accédez à des outils premium, formations professionnelles et stratégies pour 
 <li>Spotify Premium</li>
 <li>Netflix Premium</li>
 <li>YouTube Premium</li>
+
 </ul>
 
-<p><b>👉 Plus besoin d’acheter plusieurs abonnements séparément.</b></p>
+</div>
 
-</section>
-
-<section class="box">
+<div class="box">
 
 <h2>🎓 Formations Incluses</h2>
 
 <ul>
+
 <li>E-commerce</li>
 <li>Dropshipping</li>
 <li>Marketing digital</li>
 <li>Trading Forex et Crypto</li>
 <li>Cybersécurité</li>
-<li>Programmation HTML, CSS, JavaScript</li>
+<li>Programmation HTML CSS JavaScript</li>
 <li>Introduction Python</li>
 <li>Création sites web</li>
 <li>Création applications</li>
 <li>Intelligence artificielle</li>
+
 </ul>
 
-</section>
+</div>
 
-<section class="box">
-
-<h2>🤖 Outils IA Inclus</h2>
-
-<ul>
-<li>IA pour créer sites web</li>
-<li>IA pour générer applications</li>
-<li>IA pour logos et affiches</li>
-<li>IA pour vidéos</li>
-<li>IA pour images HD</li>
-<li>IA rédaction de contenu</li>
-<li>IA marketing</li>
-</ul>
-
-</section>
-
-<section class="box">
-
-<h2>💼 Business & Monétisation</h2>
-
-<ul>
-<li>Guide création entreprise digitale</li>
-<li>Guide gagner de l'argent avec l'IA</li>
-<li>Monétisation réseaux sociaux</li>
-<li>Freelance</li>
-<li>Stratégies revenus passifs</li>
-</ul>
-
-</section>
-
-<section class="box">
+<div class="box">
 
 <h2>🎁 Bonus Exclusifs</h2>
 
 <ul>
+
 <li>Droit de revente</li>
 <li>Création boutique en ligne</li>
 <li>Nom de domaine personnalisé</li>
 <li>Accès groupe privé</li>
-<li>Assistance personnalisée</li>
-<li>Mises à jour gratuites</li>
 <li>Support technique</li>
+<li>Mises à jour gratuites</li>
+
 </ul>
 
-</section>
-
-<section>
+</div>
 
 <h2 class="prix">💰 Prix Promo : 5600 FCFA</h2>
 
+<a href="https://royal-digital-boost.mychariow.shop/royal-digital" target="_blank" class="btn btn-acheter">
+
+Acheter maintenant
+
+</a>
+
 <br>
 
-<a href="https://royal-digital-boost.mychariow.shop/royal-digital" target="_blank">
+<a href="https://wa.me/qr/PWO4HJR3BNJKJ1" target="_blank" class="btn btn-whatsapp">
 
-<button class="buy">Acheter maintenant</button>
-
-</a>
-
-<br><br>
-
-<a href="https://wa.me/qr/PWO4HJR3BNJKJ1" target="_blank">
-
-<button class="whatsapp">Service client WhatsApp</button>
+Support WhatsApp
 
 </a>
 
-</section>
-
-<section class="box">
-
-<h2>⭐ Témoignages</h2>
-
-<p class="temoignage">
-"Grâce à Royal Digital Boost j'ai lancé mon premier business en ligne."
-</p>
-
-<p class="temoignage">
-"Les outils et formations sont incroyables."
-</p>
-
-<p class="temoignage">
-"Très rentable pour apprendre à gagner de l'argent sur internet."
-</p>
-
-</section>
-
-<section class="box">
-
-<h2>🔒 Garantie</h2>
-
-<p>
-
-✔ Accès immédiat après paiement<br>
-✔ Support client disponible<br>
-✔ Mise à jour gratuite<br>
-✔ Assistance technique
-
-</p>
+</div>
 
 </section>
 
@@ -303,4 +255,4 @@ document.getElementById("timer").innerHTML = "Promo terminée";
 </script>
 
 </body>
-  </html>
+</html>
